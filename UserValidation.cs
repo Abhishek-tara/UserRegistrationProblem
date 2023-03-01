@@ -40,9 +40,9 @@ namespace UserRegistrationProblem
             return Regex.IsMatch(MobNum, Regex_MobileNumber);
         }
 
-        ////--------Password-Rule-3-------///
+        ////--------Password-Rule-4-------///
 
-        public const string Regex_password = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$"; 
+        public const string Regex_password = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[&%$#@^*!~]).{8,}$"; 
         public bool ValidatePassword(string Password)
         {
             return Regex.IsMatch(Password, Regex_password);
