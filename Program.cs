@@ -8,21 +8,21 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Welcome to the User Registration Problems using Regular Expression");
 
-            UserValidation mobileNumber = new UserValidation();
+            UserValidation validate = new UserValidation();
 
-            Console.Write("Enter Your mobileNumber : ");
+            Console.Write("Enter Your password : ");
 
-            string number = Console.ReadLine();
+            string password = Console.ReadLine();
 
-            bool val = mobileNumber.ValidateMobileNumber(number);
+            bool val = validate.ValidatePassword(password);
 
             if (val)
             {
-                Console.WriteLine("mobileNumber is Valid");
+                Console.WriteLine("password is Valid");
             }
             else
             {
-                Console.WriteLine("Invalid mobileNumber");
+                Console.WriteLine("Invalid password");
             }
         }
     }
