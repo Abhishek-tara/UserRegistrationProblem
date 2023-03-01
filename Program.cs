@@ -8,21 +8,21 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Welcome to the User Registration Problems using Regular Expression");
 
-            ValidFirstname firstname = new ValidFirstname();
+            ValidLastName lastName = new ValidLastName();
 
-            Console.Write("Enter Your First Name : ");
+            Console.Write("Enter Your Last Name : ");
 
-            string FirstName = Console.ReadLine();
+            string LastName = Console.ReadLine();
 
-            bool val = firstname.ValidateFirstName(FirstName);
+            bool val = lastName.ValidateFirstName(LastName);
 
             if (val)
             {
-                Console.WriteLine("FirstName is Valid");
+                Console.WriteLine("LastName is Valid");
             }
             else
             {
-                Console.WriteLine("Invalid FirstName");
+                Console.WriteLine("Invalid LastName");
             }
         }
     }
