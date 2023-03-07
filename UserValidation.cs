@@ -68,5 +68,21 @@ namespace UserRegistrationProblem
                 Console.WriteLine((i + 1) + ". " + invalidEmails[i] + " : " + validate.ValidateEmail(invalidEmails[i]));
             }
         }
+
+        public string Email(string email)
+        {
+            Regex regex = new Regex(Regex_Email);
+
+            bool result = regex.IsMatch(email);
+            if (result)
+            {
+                return email;
+            }
+            else
+            {
+                return default;
+            }
+            throw new NotImplementedException();
+        }
     }
 }
