@@ -5,13 +5,13 @@ namespace UserRegistrationProblemTest
     public class UnitTest1
     {
         //declaration of variable regexValidation of RegexValidation class
-        UserValidation regexValidation;
+        Validate regexValidation;
 
         [TestInitialize]
         public void InitValidationObj()
         {
             //Arrange -- initialise the object to compare/test
-            regexValidation = new UserValidation();
+            regexValidation = new Validate();
         }
 
         [TestMethod]
@@ -93,7 +93,7 @@ namespace UserRegistrationProblemTest
         [DataRow("abc+100@gmail.com", "abc+100@gmail.com")]
         public void Email(string a, string expected)
         {
-            UserValidation validate = new UserValidation();
+            Validate validate = new Validate();
 
             string actual = validate.Email(a);
 
